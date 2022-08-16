@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { TaskFormComponent } from '../task-form/task-form.component';
 
 @Component({
   selector: 'app-toolbar',
@@ -7,11 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ToolbarComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit(): void {
   }
 
-  panelOpenState = false;
+  openDialog() {
+    this.dialog.open(TaskFormComponent);
+  }
 
 }

@@ -12,6 +12,9 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { TaskFormComponent } from './task-form/task-form.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatMenuModule} from '@angular/material/menu';
+import { TasksComponent } from './tasks/tasks.component';
+import {MatCardModule} from '@angular/material/card';
+
 
 
 
@@ -23,8 +26,10 @@ import {MatMenuModule} from '@angular/material/menu';
   declarations: [
     AppComponent,
     ToolbarComponent,
-    TaskFormComponent
+    TaskFormComponent,
+    TasksComponent
   ],
+  entryComponents: [TaskFormComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -34,7 +39,8 @@ import {MatMenuModule} from '@angular/material/menu';
     MatExpansionModule,
     MatFormFieldModule,
     MatDialogModule,
-    MatMenuModule
+    MatMenuModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
