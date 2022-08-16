@@ -14,11 +14,8 @@ import {MatDialogModule} from '@angular/material/dialog';
 import {MatMenuModule} from '@angular/material/menu';
 import { TasksComponent } from './tasks/tasks.component';
 import {MatCardModule} from '@angular/material/card';
-
-
-
-
-
+import {MatButtonModule} from '@angular/material/button';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 
 
 
@@ -40,7 +37,9 @@ import {MatCardModule} from '@angular/material/card';
     MatFormFieldModule,
     MatDialogModule,
     MatMenuModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]
