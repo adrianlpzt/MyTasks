@@ -1,0 +1,11 @@
+<mat-toolbar>
+    <span class="title">MyTasks</span>
+    <span class="spacer"></span>
+    <button mat-raised-button class="add-btn" [matMenuTriggerFor]="menu" #menuTrigger>
+        <mat-icon>add</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+            <mat-icon>add</mat-icon>Add new task</button>
+    </mat-menu>
+</mat-toolbar>
