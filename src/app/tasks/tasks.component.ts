@@ -20,7 +20,8 @@ export class TasksComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  
+
+
   // FUNCION BORRADO DE LA TAREA QUE PIDE CONFIRMACION DE ELIMINAR
   delete(){
     var conf = confirm("¿Estás seguro de que desea eliminar esta tarea?")

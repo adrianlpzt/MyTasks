@@ -19,6 +19,8 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { DataService } from './data.service';
+import {MatInputModule} from '@angular/material/input';
+
 
 
 @NgModule({
@@ -43,7 +45,8 @@ import { DataService } from './data.service';
     MatButtonModule,
     MatCheckboxModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    MatInputModule
 
     
     

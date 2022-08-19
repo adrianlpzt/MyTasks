@@ -6,8 +6,17 @@
     
 -->
 
-<h1 mat-dialog-title>Sorry!</h1>
-<div mat-dialog-content>
-  <p>Actually, this doesn't works...</p>
-</div>
+<mat-form-field>
+  <mat-label>Titulo de la tarea</mat-label>
+  <input matInput placeholder="Titulo" [ngModel]="tituloTarea">
+</mat-form-field>
+<br>
+<mat-form-field>
+  <mat-label>Contenido</mat-label>
+  <input matInput placeholder="Contenido" [ngModel]="contenidoTarea">
+</mat-form-field>
+<br>
+<mat-card-actions style="text-align:center ;">
+<button mat-raised-button type="submit" color="primary" (click)="addTarea()">Nueva Tarea</button>
+</mat-card-actions>
 
