@@ -19,5 +19,11 @@ export class DataService {
 
   }
 
+  getTasks() {
+
+    return this.httpClient.get('https://mytasks-4f982-default-rtdb.europe-west1.firebasedatabase.app/datos.json');
+  
+  }
+
 
 }

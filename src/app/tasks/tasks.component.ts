@@ -18,6 +18,10 @@ export class TasksComponent implements OnInit {
   constructor(private datos:DataService) { }
 
   ngOnInit(): void {
+    console.log(this.datos.getTasks().subscribe(allData=>{
+      console.log(allData)
+    }))
+    
   }
 
 
