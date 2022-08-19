@@ -16,7 +16,9 @@ import { TasksComponent } from './tasks/tasks.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCheckboxModule} from '@angular/material/checkbox';
-
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { DataService } from './data.service';
 
 
 @NgModule({
@@ -39,9 +41,14 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     MatMenuModule,
     MatCardModule,
     MatButtonModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    HttpClientModule,
+    FormsModule
+
+    
+    
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

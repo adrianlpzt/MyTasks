@@ -13,7 +13,7 @@ export class ToolbarComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  // FUNCION QUE ABRE LA BARRA DESPLEGABLE SUPERIOR DERECHA
   openDialog() {
     this.dialog.open(TaskFormComponent);
   }

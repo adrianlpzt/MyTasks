@@ -1,11 +1,22 @@
+<!--
+
+  ESTA ES PLANTILLA DE CADA TARJETA QUE EQUIVALE A CADA TAREA
+
+
+-->
+
 <mat-card>
-    <mat-card-title>Task Title</mat-card-title>
+    <!--TITULO DE LA TAREA-->
+    <mat-card-title>{{tasks.title}}</mat-card-title>
     <mat-card-content>
-      <p>This is the content of the task</p>
+      <!--CONTENIDO DE LA TAREA-->
+      <p>{{tasks.content}}</p>
     </mat-card-content>
     <mat-card-actions>
+      <!--BOTON DE COMPLETADA-->
       <mat-checkbox class="example-margin">Completada</mat-checkbox>
-      <button mat-button>
+      <!--BOTON DE BORRAR TAREA-->
+      <button mat-button (click)="delete()">
         <mat-icon bg="red">delete</mat-icon>
       </button>
     </mat-card-actions>
