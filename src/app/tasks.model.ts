@@ -6,8 +6,9 @@ export class tasks {
         this.content=content;
 
     }
-    title: String="";
-    content: String="";
+
+    title: String;
+    content: String;
     isCompleted: Boolean=false;
 
 }

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
 import { MatDialog } from '@angular/material/dialog';
+import { tasks } from '../tasks.model';
 
 @Component({
   selector: 'app-task-form',
@@ -18,6 +19,7 @@ export class TaskFormComponent implements OnInit {
   contenidoTarea:string="";
 
   addTarea() {
+    this.data.addTask(new tasks(this.tituloTarea, this.contenidoTarea))
     this.dialog.closeAll();
   }
 
