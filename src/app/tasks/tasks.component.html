@@ -1,0 +1,23 @@
+<!--
+
+  ESTA ES PLANTILLA DE CADA TARJETA QUE EQUIVALE A CADA TAREA
+
+
+-->
+
+<mat-card *ngFor="let task of tasks">
+    <!--TITULO DE LA TAREA-->
+    <mat-card-title>{{task.title}}</mat-card-title>
+    <mat-card-content>
+      <!--CONTENIDO DE LA TAREA-->
+      <p>{{task.content}}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <!--BOTON DE COMPLETADA-->
+      <mat-checkbox class="example-margin">Completada</mat-checkbox>
+      <!--BOTON DE BORRAR TAREA-->
+      <button mat-button (click)="delete()">
+        <mat-icon bg="red">delete</mat-icon>
+      </button>
+    </mat-card-actions>
+</mat-card>

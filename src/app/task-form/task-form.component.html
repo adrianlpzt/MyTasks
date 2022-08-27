@@ -1,0 +1,23 @@
+<!--
+    
+    ESTE ES EL FOMULARIO DONDE SE VAN A REALIZAR LAS 
+    INSERCIONES DE LAS TAREAS, QUE SE ACTIVA A TRAVÉS
+    DEL BOTON SUPERIOIR DERECHO DE LA PANTALLA
+    
+-->
+
+<mat-form-field>
+  <mat-label>Titulo de la tarea</mat-label>
+  <input matInput placeholder="Titulo" [(ngModel)]="tituloTarea">
+</mat-form-field>
+<br>
+<mat-form-field>
+  <mat-label>Contenido</mat-label>
+  <input matInput placeholder="Contenido" [(ngModel)]="contenidoTarea">
+</mat-form-field>
+<br>
+<mat-card-actions style="text-align:center ;">
+<button mat-raised-button type="submit" color="primary" (click)="addTarea()">Nueva Tarea</button>
+
+</mat-card-actions>
+
